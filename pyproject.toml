@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ziweidoushu-core"
+version = "0.1.0"
+description = "Zi Wei Dou Shu Core library and API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ziweidoushu_core*"]
